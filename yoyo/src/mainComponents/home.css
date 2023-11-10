@@ -1,0 +1,9 @@
+.Home{
+    width: 100vw;
+    height: 100vh;
+}
+.displayField{
+    width: 100vw;
+    height: calc(100vh - 64px);
+    background-color: #E0F4FF;
+}

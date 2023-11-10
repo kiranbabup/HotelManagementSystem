@@ -1,12 +1,18 @@
 import './headerComponent.css';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const HeaderComponent = () => {
-    const navigate = useNavigate();
-    
+    // const navigate = useNavigate();
+
   return (
-    <div className="HeaderComponent">
-      header
+    <div className="headerComponent">
+      <nav>
+        <h1>YOYO</h1>
+        <section className='navSection'>
+          <article className='forOwnerRegistration'>List your property</article>
+          <article className='forUserRegistration'>Login/SignUp</article>
+        </section>
+      </nav>
     </div>
   );
 }
