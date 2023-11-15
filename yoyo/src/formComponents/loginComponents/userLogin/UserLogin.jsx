@@ -7,7 +7,6 @@ const UserLogin = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loginType, setLoginType] = useState('user'); // Default login type is 'user'
-
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {
@@ -30,10 +29,9 @@ const UserLogin = () => {
   };
 
   return (
-
     <>
       <div className='oyo'>
-      <a href='/home' >YOYO</a>
+      <a href='/' >YOYO</a>
       <h5>Hotels and homes across 800 cities, 24+ countries</h5>
     </div>
     <div className="login">
@@ -90,14 +88,11 @@ Sign up with your phone number</strong> and get exclusive access to discounts an
 
           {error && <p>{error}</p>}
           <button type="submit">Login</button>
-          <p>
-            Don't have an account <a href='/signup'>Signup</a>
-          </p>
+          <p>Don't have an account <a href='/signup'>Signup</a></p>
         </form>
       </div>
     </div>
     </>
-
   );
 };
 

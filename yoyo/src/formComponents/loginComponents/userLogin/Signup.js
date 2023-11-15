@@ -52,7 +52,7 @@ const SignupForm = () => {
     <>
 
     <div className='oyo'>
-      <a href='/home' >YOYO</a>
+      <a href='/' >YOYO</a>
       <h5>Hotels and homes across 800 cities, 24+ countries</h5>
     </div>
     <div className='signup'>

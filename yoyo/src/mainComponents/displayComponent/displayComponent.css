@@ -1,0 +1,101 @@
+.locationDiv, .locationBox, .partTwo, .imageDiv, .imgCon, .searchDiv, .searchField{
+    display: flex;
+    align-items: center;
+}
+.DisplayComponent{
+    width: 100vw;
+    height: calc(100vh - 65px);
+}
+.locationDiv{
+    height: 6%;
+    background-color: rgb(218, 209, 209);
+    justify-content: space-evenly;
+}
+.locationBox{
+    padding: 0 1rem;
+    height: 2rem;
+    justify-content: center;
+}
+.locationBox:hover{
+    background-color: #F1EAFF;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.searchDiv{
+    width: 100%;
+    height: 20%;
+    background-color: cornflowerblue;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#searchTitle{
+    font-size: 2rem;
+    color: rgb(237, 241, 24);
+}
+.searchField{
+    width: 70%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: center;
+}
+.searchInput{
+    border: none;
+    outline: none;
+    width: 57%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 3%;
+    font-size: 1rem;
+}
+.searchSelector{
+    height: 100%;
+    border-radius: 5px;
+    width: 20%;
+    border: solid rgb(202, 201, 201);
+    font-size: 1.3rem;
+    outline: none;
+}
+.searchButton{
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: green;
+    color: wheat;
+    font-size: 2rem;
+    border: none;
+}
+.partTwo{
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
+h2{
+    color: rgb(110, 159, 159);
+    font-size: 3rem;
+}
+.imageDiv{
+    width: 90%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.imgCon{
+    background-color: rgb(226, 147, 147);
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+}
+.homePageBedsImage{
+    height: 80%;
+    width: 90%;
+}
+.homePageBedsImage:hover{
+    width: 95%;
+    height: 95%;
+}
