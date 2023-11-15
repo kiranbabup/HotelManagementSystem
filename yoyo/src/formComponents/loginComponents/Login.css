@@ -1,15 +1,14 @@
-.signup {
-    z-index: 1;
+.login{
     width: 100%;
     height: 100vh;
-    background-image: url(./OYO.avif);
+    background-image: url(../../assets/images/OYO.avif);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-  .oyo {
+}
+.oyo {
     position: fixed;
     display: flex;
     align-items: center;
@@ -28,7 +27,7 @@
     font-size: 40px;
     font-weight: bolder;
     color: white;
-    text-decoration:none
+    text-decoration:none;
   }
 
   .material{
@@ -42,8 +41,7 @@
     line-height: 35px;
     font-size: 35px;
   }
-  
-  .signup_1 {
+.login__1{
     width: 400px;
     display: flex;
     margin-right: 100px;
@@ -55,84 +53,73 @@
     border: 1px solid rgb(20, 20, 20);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-  }
-  
-  .user_switch {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
-  .user_switch button {
-    width: 200px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    padding: 10px;
-    background-color: #eee;
-    transition: background-color 0.3s ease;
-  }
-  
-  .user_switch button.active {
-    background-color: #4285f4;
-    color: #fff;
-  }
-  
-  .form_1 {
-    margin: 10px 0;
-    width: 100%;
-   margin-left: 150px;
 
-    
-  }
-  
-  .form_1 > label {
-    color: rgb(21, 21, 21);
+}
+.form__1{
+    margin: 6px;
+}
+
+.form__1 > label{
+    color: rgb(6, 6, 6);
     font-size: 14px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .form_1 > input {
+
+}
+.form__1 > input{
     width: 250px;
     height: 30px;
-    padding: 8px;
-    border: 1px solid rgb(20, 20, 20);
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .form___1 {
+}
+.form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  
-  .form___1 > h1 {
-    color: rgb(8, 8, 8);
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .form___1 > button {
+    margin-top: 50px;
+}
+.form >h1{
+    position: relative;
+    top: -30px;
+    color: rgb(10, 10, 10);
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.form > button{
     width: 200px;
     height: 40px;
     margin-top: 10px;
-    border: 2px solid rgb(26, 26, 26);
+    border: rgb(6, 6, 6) 2px solid;
     background-color: black;
-    color: rgb(238, 236, 236);
+    color: rgb(246, 244, 244);
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+
+}
+/* External CSS File or within your component if using styled-components */
+
+.user_switch {
+    display: flex;
+    justify-content: space-around;
   }
   
-  .form___1 > button:hover {
-    background-color: #333;
+  .user_switch button {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #eee;
   }
   
-  .form___1 > p {
-    color: rgb(14, 13, 13);
+  .user_switch button.active {
+    background-color: #4285f4; /* Change this color as needed */
+    color: #fff;
   }
   
+.form > p  {
+    color: rgb(15, 15, 15);
+    margin-top: 10px;
+}
+.form > p > a {
+    color: skyblue;
+    
+}
