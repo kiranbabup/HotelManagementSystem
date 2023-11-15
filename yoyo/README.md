@@ -74,3 +74,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### `npm i react-router-dom`
 In the project directory, Routing installation code
 
+color pallet codes
+#F1EAFF for header
+#E0F4FF for displayField
+
+### npm install @mui/material @emotion/react @emotion/styled
+### npm install @mui/icons-material
+for MUI connection

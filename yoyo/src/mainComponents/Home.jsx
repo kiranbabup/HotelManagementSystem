@@ -1,7 +1,5 @@
 import HeaderComponent from '../commonComponents/headerComponent/HeaderComponent';
-import SignupForm from '../formComponents/loginComponents/userLogin/Signup';
-import UserLogin from '../formComponents/loginComponents/userLogin/UserLogin';
-import DisplayComponent from './displayComponent/DisplayComponent';
+import Displaycomponent from './displayComponent/Displaycomponent';
 import './home.css';
 
 const Home = () => {
@@ -9,8 +7,7 @@ const Home = () => {
     <div className="Home">
       <HeaderComponent/>
       <div className='displayField'>
-        <DisplayComponent/>
-        <UserLogin/>
+        <Displaycomponent/>
       </div>
     </div>
   );
