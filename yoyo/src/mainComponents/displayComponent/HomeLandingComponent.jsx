@@ -2,7 +2,7 @@ import './displayComponent.css';
 import leftBed from '../../assets/images/leftBed.jpg'
 import midBed from '../../assets/images/middleBed.jpg'
 import rightBed from '../../assets/images/rightBed.jpg'
-const Displaycomponent = () => {
+const HomeLandingComponent = () => {
     
   return (
     <div className="DisplayComponent">
@@ -45,8 +45,9 @@ const Displaycomponent = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
 
-export default Displaycomponent;
+export default HomeLandingComponent;

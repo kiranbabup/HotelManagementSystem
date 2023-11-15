@@ -1,5 +1,6 @@
+import FooterComponent from '../commonComponents/footerComponent/FooterComponent';
 import HeaderComponent from '../commonComponents/headerComponent/HeaderComponent';
-import Displaycomponent from './displayComponent/Displaycomponent';
+import HomeLandingComponent from './displayComponent/HomeLandingComponent';
 import './home.css';
 
 const Home = () => {
@@ -7,8 +8,9 @@ const Home = () => {
     <div className="Home">
       <HeaderComponent/>
       <div className='displayField'>
-        <Displaycomponent/>
+        <HomeLandingComponent/>
       </div>
+      <FooterComponent/>
     </div>
   );
 }

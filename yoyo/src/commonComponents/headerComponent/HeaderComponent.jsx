@@ -7,7 +7,7 @@ const HeaderComponent = () => {
   return (
     <div className="headerComponent">
       <nav>
-        <h1>YOYO</h1>
+      <a className='headerLogo' href='/' >YOYO</a>
         <section className='navSection'>
           <article className='forHotelRegistration' onClick={() =>navigate('/login')} >List your property</article>
           <article className='forUserRegistration' onClick={() =>navigate('/login')} ><AccountCircleIcon color="action" fontSize="large" /> Login / SignUp</article>
