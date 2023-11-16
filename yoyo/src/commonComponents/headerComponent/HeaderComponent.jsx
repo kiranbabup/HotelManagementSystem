@@ -17,12 +17,20 @@ const HeaderComponent = () => {
           YOYO
         </a>
         <section className="navSection">
+          { !loginSuccess ?
           <article
             className="forHotelRegistration"
             onClick={() => navigate("/login")}
           >
             List your property
-          </article>
+          </article> :
+          <article
+            className="forHotelRegistration"
+            onClick={() => navigate("/myBookings")}
+          >
+            My Bookings
+          </article> 
+          }
           {loginSuccess ? (
             <article className="forUserRegistration" onClick={() => onLogout()}>
               Log out

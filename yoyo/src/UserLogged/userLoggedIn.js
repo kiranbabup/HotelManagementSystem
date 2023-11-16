@@ -1,51 +1,57 @@
 import { useEffect, useState } from "react";
 import "./userLoggedIn.css";
-import axios from "axios";
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-// import { usersStore } from "../App";
-// import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-function UserLoggedIn() {
-  const [Hotels, SetHotels] = useState([]);
-  // const {searchData}=usersStore();
+import WifiOutlinedIcon from '@mui/icons-material/WifiOutlined';
+import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined';
+import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
+import hotelData from "../assets/hotelData.json"
+
+function UserLoggedIn({ searchTerm }) {
+  const [filteredHotels, setFilteredHotels] = useState([]);
 
   useEffect(() => {
-    axios.get("https://dummyjson.com/products").then((res) => {
-      // console.log(res);
-      SetHotels(res.data.products);
-    });
-  }, []);
+    const filtered = hotelData.filter((hotel) =>
+      hotel.hotelName.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredHotels(filtered);
+  }, [searchTerm]);
 
   return (
-        <div className="Container">
-      <div className="hotels">
-        {Hotels.map((hotel) => {
+    <div className="Container">
+      {filteredHotels.map((hotel) => {
         return (
-          
           <div className="each-hotel" key={hotel.id}>
-            <img src={hotel.thumbnail} alt="img" />
+            {/* {console.log(hotel)} */}
+            <img className="eachHotelImage" src={hotel.imagee} alt="img" />
             <div className="hotel-info">
-              <h3>{hotel.title}</h3>
-              <p>{hotel.description}</p>
+              <h3>{hotel.hotelName}</h3>
+              <p>{hotel.hotelAddress}</p>
               <p className="rating">
-                {" "}
                 <span>{hotel.rating} ☆ </span> ({hotel.stock} ratings)
               </p>
-              {/* <p className="services">Sanitized <CheckCircleOutlineIcon color="danger" fontSize="medium" style={{ strokeWidth: '10px !important' }} className="checkcircleicon" /></p> */}
-              {console.log(hotel)}
+              <p className="sanitized">Sanitized <CheckBoxOutlinedIcon sx={{ background: "none", color: "black", marginTop: "5px" }} /></p>
+              <div className="facilities">
+                <div className="facility"><CheckCircleOutlinedIcon /> Reception</div>
+                <div className="facility"><WifiOutlinedIcon /> Free Wifi</div>
+                <div className="facility"><CheckCircleOutlinedIcon /> Care Taker</div>
+                <div className="facility">+10 More</div>
+              </div>
               <div className="price-booking">
-                <h3>Price :${hotel.price}</h3>
-
-                <Link to={`/hotel/${hotel.id}`} className="muibutton-view"> <Button className="btn btn-view" variant="contained" color="primary" >view details</Button></Link>
-                
-                <Button className="btn btn-buy"variant="contained" color="error">Book</Button>
+                <div>
+                  <h3>Price: ${hotel.price}</h3>
+                  <p>+18% taxes and fee per room per one night.</p>
+                </div>
+                <Link to={`/hotel/${hotel.id}`} className="muibutton-link">
+                  <Button variant="contained" color="primary" >
+                    view details</Button>
+                </Link>
+                {/* <Button className="btn btn-buy" variant="contained" color="error" onClick={()=>onBookClick()}>Book</Button> */}
               </div>
             </div>
           </div>
         );
       })}
-
-      </div>
     </div>
   );
 }

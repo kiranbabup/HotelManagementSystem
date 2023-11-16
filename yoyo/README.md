@@ -84,3 +84,9 @@ for MUI connection
 
 ### npm install zustand
 install code for zustand
+
+### npm install slick-carousel
+install code for slick-carousel
+
+### npm install react-slick
+install code for react-slick

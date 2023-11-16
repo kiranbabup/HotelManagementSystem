@@ -1,15 +1,15 @@
-import FooterComponent from '../commonComponents/footerComponent/FooterComponent';
 import HeaderComponent from '../commonComponents/headerComponent/HeaderComponent';
 import HomeLandingComponent from './displayComponent/HomeLandingComponent';
+import FooterComponent from '../commonComponents/footerComponent/FooterComponent';
 import './home.css';
 
 const Home = () => {
   return (
     <div className="Home">
       <HeaderComponent/>
-      <div className='displayField'>
+      {/* <div className='HomeLandingComponent'> */}
         <HomeLandingComponent/>
-      </div>
+      {/* </div> */}
       <FooterComponent/>
     </div>
   );
