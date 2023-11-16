@@ -5,7 +5,10 @@
 .DisplayComponent{
     width: 100%;
     height: auto;
+    background-color: #E0F4FF;
+    padding-top: 65px;
 }
+
 .locationDiv{
     height: 2.5rem;
     background-color: rgb(218, 209, 209);
@@ -23,14 +26,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .searchDiv{
     width: 100%;
-    height: 7rem;
+    height: 8rem;
     background-color: cornflowerblue;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-bottom: 1rem;
 }
 #searchTitle{
     font-size: 2rem;
@@ -70,11 +74,16 @@
     font-size: 2rem;
     border: none;
 }
+
+.partOne{
+    width: 100%;
+    min-height: 100vh;
+}
+
 .partTwo{
     width: 100%;
-    height: 20rem;
+    height: 40rem;
     flex-direction: column;
-    justify-content: start;
     gap: 1rem;
     padding-bottom: 1rem;
 }
@@ -86,18 +95,20 @@
     width: 90%;
     height: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 .imgCon{
     background-color: rgb(226, 147, 147);
     width: 25%;
-    height: 100%;
+    height: 45%;
     justify-content: center;
 }
 .homePageBedsImage{
     height: 80%;
-    width: 90%;
+    width: 80%;
 }
 .homePageBedsImage:hover{
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 97%;
 }
