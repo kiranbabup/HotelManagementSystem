@@ -51,7 +51,6 @@ const HomeLandingComponent = () => {
       </div>
       {
         !isSearchCalled ? <>
-        <HotelList/>
         <div className='partTwo'>
         <h2 className='bedImagesTitle'>Book your favorite hotels accross India</h2>
         <div className='imageDiv'>
@@ -65,7 +64,9 @@ const HomeLandingComponent = () => {
             <img className='homePageBedsImage' src={rightBed} alt="Hotle Bed room" />
           </div>
         </div>
-      </div></> : <UserLoggedIn/>
+      </div>
+      <HotelList/>
+      </> : <UserLoggedIn/>
       }
       
       

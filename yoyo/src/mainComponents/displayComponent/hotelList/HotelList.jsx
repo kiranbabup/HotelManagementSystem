@@ -2,15 +2,23 @@ import { useEffect, useState } from 'react';
 import './HotelList.css';
 import axios from 'axios';
 import { Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { usersStore } from '../../../App';
 
 const HotelList=()=> {
     const [Hotels, setHotels] = useState([]);
-  useEffect(() => {
-    axios.get("https://dummyjson.com/products?skip=5&limit=6").then((res) => {
-      setHotels(res.data.products);
-    });
-  }, []);
+  const navigate = useNavigate();
+  const { loginSuccess } = usersStore();
+    
+    useEffect(() => {
+        axios.get("https://dummyjson.com/products?skip=5&limit=6").then((res) => {
+        setHotels(res.data.products);
+        });
+    }, []);
+    const onBookButtonClick=()=>{
+        console.log(loginSuccess,"list");
+        loginSuccess === true ? navigate('/user') : navigate('/login')
+    }
   return (
     <div className="HotelList">
         {
@@ -33,7 +41,7 @@ const HotelList=()=> {
                         <Link to={`/hotel/${hotel.id}`} >
                             <Button variant="contained" color="primary" >view details</Button>
                         </Link>
-                        <Button variant="contained" color="error">Book</Button>
+                        <Button variant="contained" onClick={()=>onBookButtonClick()} color="error">Book</Button>
                     </div>
                 </div>
             </div>
