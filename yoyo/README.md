@@ -81,3 +81,6 @@ color pallet codes
 ### npm install @mui/material @emotion/react @emotion/styled
 ### npm install @mui/icons-material
 for MUI connection
+
+### npm install zustand
+install code for zustand

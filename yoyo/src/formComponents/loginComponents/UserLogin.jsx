@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
+import { usersStore } from '../../App';
 
 const UserLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loginType, setLoginType] = useState('user'); // Default login type is 'user'
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const {updateSucces} =usersStore();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +21,8 @@ const UserLogin = () => {
         console.log('Logged in successfully!');
         setEmail('');
         setPassword('');
-        navigate("/")
+        navigate("/");
+        updateSucces(true);
       } else {
         setError('Invalid email or password.');
       }

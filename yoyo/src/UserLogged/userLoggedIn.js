@@ -13,10 +13,7 @@ function UserLoggedIn() {
     });
   }, []);
   return (
-    <div className="Container">
-      <div className="filters">
-
-      </div>
+        <div className="Container">
       <div className="hotels">
         {Hotels.map((hotel) => {
         return (
