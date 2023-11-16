@@ -1,0 +1,40 @@
+.slick-center .slider-item {
+  transform: scale(1.2);
+
+  transition: transform 0.5s ease;
+}
+
+.slider-item {
+  margin: 0 10px;
+
+  transition: transform 0.5s ease;
+}
+
+.slider-item img {
+  height: 40vh;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  transform: scale(0.8);
+}
+
+.slick-prev,
+.slick-next {
+  top: 50%;
+  background-color: black !important;
+  width: 3%;
+  color: red;
+
+  height: 5vh;
+
+}
+
+.slider-container img {
+  border: 2px solid red;
+}
+.slick-prev:hover,
+.slick-next:hover{
+  color:black !important;
+}

@@ -10,7 +10,6 @@ const Home = () => {
       <div className='displayField'>
         <HomeLandingComponent/>
       </div>
-      <FooterComponent/>
     </div>
   );
 }

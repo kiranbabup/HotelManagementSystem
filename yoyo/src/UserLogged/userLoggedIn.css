@@ -1,24 +1,21 @@
 .Container {
     height: 100%;
     width: 100%;
-    background: #e9cfcf;
     overflow: auto;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.filters{
-    box-sizing: border-box;
-    width: 30%;
-    height: 100vh;
-    border: 2px solid red;
-    position: fixed;
-}
+
 .Container .hotels{
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 68%;
+    margin-top: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
-    border: 2px solid black;
     
 }
 /* .result {
@@ -28,12 +25,25 @@
     border: 2px solid red;
 } */
 
+.facilities{
+    display: flex;
+    gap: 15px;
+
+    
+}
+
+.facilities div{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
 .each-hotel {
     line-height: 4vh;
     margin: 2%;
     margin-top: 2%;
     width: 80%;
-    height: 35vh;
+    height: 50vh;
     border: 2px solid grey;
     box-sizing: border-box;
     display: flex;
@@ -68,10 +78,16 @@
     box-sizing: border-box;
     position: absolute;
     display: flex;
+    gap: 15px;
     align-items: center;
     /* border: 2px solid red; */
     width: 100%;
     height: 5vh;
+}
+
+.price-booking div p{
+    font-size: 10px;
+    line-height: 10px;
 }
 
 .price-booking h3 {
