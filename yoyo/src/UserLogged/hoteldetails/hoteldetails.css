@@ -7,12 +7,13 @@
     min-height: 100vh;
 }
 
-.detail-container .title{
+.title{
     margin-left: 25%;
     width: 50%;
     text-align: center;
     border-bottom: 3px solid black;
     padding-bottom: 1%;
+    font-size: 300%;
 }
 
 .image-container{
@@ -29,7 +30,6 @@
 }
 
 .extra-details {
-    /* border: 2px solid violet; */
     margin-left: 25%;
     width: 50%;
     text-align: center;
@@ -37,7 +37,6 @@
 .brand{
     margin-top: 2%;
     padding: 2%;
-    /* border: 2px solid greenyellow; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -51,4 +50,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+}
+.back{
+    background-color: rgb(241 20 20);
+    color: white;
+    padding: 0.3rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bolder;
+
 }

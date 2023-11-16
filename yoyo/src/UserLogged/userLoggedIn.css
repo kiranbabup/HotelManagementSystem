@@ -1,25 +1,23 @@
 .Container {
     height: 100%;
     width: 100%;
-    background: #e9cfcf;
+    /* background: #e9cfcf; */
     overflow: auto;
-    position: absolute;
-}
-.filters{
-    box-sizing: border-box;
-    width: 30%;
-    height: 100vh;
-    border: 2px solid red;
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
 }
 .Container .hotels{
-    position: absolute;
-    top: 0;
-    right: 0;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
     width: 68%;
     height: auto;
-    border: 2px solid black;
-    
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+
 }
 /* .result {
     display: flex;

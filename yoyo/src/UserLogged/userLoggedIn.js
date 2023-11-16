@@ -3,20 +3,21 @@ import "./userLoggedIn.css";
 import axios from "axios";
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
+// import { usersStore } from "../App";
 // import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 function UserLoggedIn() {
   const [Hotels, SetHotels] = useState([]);
+  // const {searchData}=usersStore();
+
   useEffect(() => {
     axios.get("https://dummyjson.com/products").then((res) => {
       // console.log(res);
       SetHotels(res.data.products);
     });
   }, []);
-  return (
-    <div className="Container">
-      <div className="filters">
 
-      </div>
+  return (
+        <div className="Container">
       <div className="hotels">
         {Hotels.map((hotel) => {
         return (
